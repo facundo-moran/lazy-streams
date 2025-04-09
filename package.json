@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "tsc && rollup -c rollup.config.mjs",
-    "test": "vitest run --coverage",
+    "test": "vitest run",
     "release": "standard-version"
   },
   "repository": {
