@@ -1,7 +1,6 @@
 # 📦 lazy-streams
 
-![CI](https://github.com/facundo-moran/lazy-streams/actions/workflows/github-actions-ci.yml/badge.svg)
-![Coverage](https://img.shields.io/badge/coverage-generated-blue)
+![Coverage](./coverage/badge.svg)
 
 **LazyStreams** es una pequeña y poderosa librería escrita en **TypeScript** para trabajar con flujos de datos de manera **perezosa (lazy)** y **funcional**. Está diseñada para ser minimalista, expresiva y fácil de extender.
 

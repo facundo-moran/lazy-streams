@@ -22,3 +22,6 @@ yarn-error.log*
 
 # Output
 *.log
+
+coverage/*
+!coverage/badge.svg

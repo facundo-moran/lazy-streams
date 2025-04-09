@@ -17,8 +17,10 @@
     }
   },
   "scripts": {
+    "coverage:badge": "node scripts/gen-coverage-badge.js",
     "build": "tsc && rollup -c rollup.config.mjs",
     "test": "vitest run",
+    "coverage": "vitest run --coverage",
     "release": "standard-version"
   },
   "repository": {
@@ -35,6 +37,8 @@
   "author": "Facundo Morán",
   "license": "MIT",
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.1.1",
+    "badgen": "^3.2.3",
     "rollup": "^3.29.4",
     "rollup-plugin-typescript2": "^0.34.1",
     "standard-version": "^9.5.0",
