@@ -1,7 +1,7 @@
 {
   "name": "lazy-streams",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Librería funcional de evaluación perezosa en TypeScript",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
