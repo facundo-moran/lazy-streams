@@ -26,6 +26,14 @@ jobs:
       - name: Ejecutar pruebas
         run: npm run test -- --coverage
 
+      - name: Verificar la carpeta de cobertura
+        run: |
+          if [ ! -d "coverage" ]; then
+            echo "La carpeta de cobertura no existe. Creando una carpeta vacía."
+            mkdir -p coverage
+          fi
+          ls -la coverage
+
       - name: Subir reporte de cobertura
         uses: actions/upload-artifact@v3
         with:
@@ -36,4 +44,3 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-  
