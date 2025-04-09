@@ -1,0 +1,45 @@
+{
+  "name": "lazy-streams",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "Librería funcional de evaluación perezosa en TypeScript",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && rollup -c rollup.config.mjs",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facundo-moran/lazy-streams.git"
+  },
+  "keywords": [
+    "lazy",
+    "stream",
+    "typescript",
+    "functional-programming",
+    "evaluacion-perezosa"
+  ],
+  "author": "Facundo Morán",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^3.29.4",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.3.3",
+    "vitest": "^3.1.1"
+  }
+}
